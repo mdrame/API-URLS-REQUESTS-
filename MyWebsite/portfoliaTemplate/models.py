@@ -14,7 +14,10 @@ class ProjectName(models.Model):
 
 #project description class object 
 class ProjectDescription(models.Model):
-    descrition_text = models.CharField(mix_length=1000)
+    descrition_text = models.CharField(max_length=1000)
+
+class ProjectTechnologyUsed(models.Model):
+    tecnology_text = models.CharField(max_length=1000)
 
 
 # class ProjectName(models.Model):
