@@ -1,19 +1,29 @@
+# SocialSite
+
+## Under Construcrtion .... 
 
 
+#### Dash Board
 
-<h1> URLS & REQUESTS </h1>
+<img src="1.png">
 
-<h3> URL Parts  </h3>
+### Usage
 
-<img src="url.jpeg"/>
+All you got to do is download repo and replace image, social links, and resume which is a .png. also you can add a new social link by copy and pasting the social div
 
-<h2> What is an API? </h2>
+#### Technology
 
-<p> An application program interface (API) is a set of routines, protocols, and tools for building software applications. Basically, an API specifies how software components should interact. Additionally, APIs are used when programming graphical user interface (GUI) components </p>
+* HTML
+* CSS
+* BootStrap
+* Google Online Font-Family
 
-<h2> Enjoy </h2>
+#### todo
 
-<p> <a href="https://www.smashingmagazine.com/2018/01/understanding-using-rest-api/"> Understanding and Using REST APIs </a> </p>
-
-
-
+* post to hosting site / server. ✅ Done
+* Create individual project page to show more detail about project
+* give user uption to download resume
+* user can visit project from show more detail page.
+* And pls orgonize the file structure ( it's a mess )
+* re-build project with Django...
+* The goal of this site is to build a standerd portfolia website using Django FrameWork
