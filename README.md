@@ -9,7 +9,7 @@
 
 ### Usage
 
-All you got to do is download repo and replace image, social links, and resume which is a .png. also you can add a new social link by copy and pasting the social div
+
 
 #### Technology
 
@@ -17,10 +17,11 @@ All you got to do is download repo and replace image, social links, and resume w
 * CSS
 * BootStrap
 * Google Online Font-Family
+* Django
 
 #### todo
 
-* post to hosting site / server. ✅ Done
+* post to hosting site / server
 * Create individual project page to show more detail about project
 * give user uption to download resume
 * user can visit project from show more detail page.
