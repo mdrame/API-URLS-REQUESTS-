@@ -10,14 +10,16 @@ from django.db import models
 class ProjectName(models.Model):
     name_text = models.CharField(max_length=200)
 
+    def __str__(self):
+        return self.name_text
 
 
 #project description class object 
-class ProjectDescription(models.Model):
-    descrition_text = models.CharField(max_length=1000)
+# class ProjectDescription(models.Model):
+#     descrition_text = models.CharField(max_length=1000)
 
-class ProjectTechnologyUsed(models.Model):
-    tecnology_text = models.CharField(max_length=1000)
+# class ProjectTechnologyUsed(models.Model):
+#     tecnology_text = models.CharField(max_length=1000)
 
 
 # class ProjectName(models.Model):

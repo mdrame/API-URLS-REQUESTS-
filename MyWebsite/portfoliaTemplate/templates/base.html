@@ -4,7 +4,7 @@
 
 <head>
 
-	<title> ♥️ </title>
+	<title> Base </title>
 
 	<link rel="stylesheet" type="text/css" href="HomeCss.css">
 
@@ -28,11 +28,12 @@
 
 <body>
 
+        {% block content %}
 
+        {% endblock %}
 
-		<h1> Index </h1>
-		<h2> {{ request.user }}</h2>
-
+		<h1> Base </h1>
+		<h4> {{ request.user }} </h4>
 
 
 </body>
