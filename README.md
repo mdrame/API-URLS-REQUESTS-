@@ -19,7 +19,7 @@
 * Google Online Font-Family
 * Django
 
-#### todo
+#### Todo
 
 * post to hosting site / server
 * Create individual project page to show more detail about project
