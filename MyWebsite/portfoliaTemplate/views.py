@@ -7,7 +7,7 @@ from .models import ProjectName
 
 
 def home(request ):
-    obj = ProjectName
+    obj = ProjectName.objects.get(id=2                                                                                )
     context = { "Name": obj.name_text }
     
     return render(request, 'home.html',  context)
