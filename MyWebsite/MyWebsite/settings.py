@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-    'django.contrib.staticfile s',
+    'django.contrib.staticfiles',
     'portfoliaTemplate',
 ]
 
