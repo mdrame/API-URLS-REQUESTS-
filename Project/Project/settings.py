@@ -31,8 +31,8 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    
-    'portfolioSite.apps.PortfoliositeConfig',
+    # third party app
+    'portfolioSite',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

@@ -1,25 +1,22 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title> Portfolio </title>
+        <title> Detail / Project Name  </title>
     </head>
 
     <!-- indise -->
     <body>
 
         
-                    <h1> Portfolio Page  </h1>
+                    <h1> Project Name </h1>
                     <br>
-                    {% for data in portfolioModel %}
+                    {% for data in detailViewPortfolio %}
+                    <h3> {{ data.Image }}</h3>
                     <h2> {{ data.ProjectName }}</h2>
                     <h6> {{ data.Technology }}</h6>
-                    <h3> {{ data.Image }}</h3>
-                    <a href="{% url 'Detailportfolio' %}"><h7> {{ data.ReadMore }}<br></a> <br> 
+                    <h3> {{ data.Summery }} </h3>
                     {% endfor %}
-
-                    
        
-
 
 
               
