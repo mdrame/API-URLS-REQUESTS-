@@ -22,7 +22,7 @@ portfolioModel = [{ "ProjectName": "Y E L P Z",
                     
              {
 
-               "ProjectName": "Y E L P Z",
+               "ProjectName": "Bulk Youtube",
               "Technology": " Python, Flask, Django, MongoDB",
               "Image": " This is the logo on the project",
               "ReadMore": " This is a button",
@@ -31,7 +31,7 @@ portfolioModel = [{ "ProjectName": "Y E L P Z",
 
              {
 
-               "ProjectName": "Y E L P Z",
+               "ProjectName": "Gif Search",
               "Technology": " Python, Flask, Django, MongoDB",
               "Image": " This is the logo on the project",
               "ReadMore": " This is a button",
@@ -79,4 +79,13 @@ def about(request):
 #contact view
 def contact(request):
     return HttpResponse('Contact page')
+
+# Todo: 
+    # 1. Touch Resume.html, about & contact. 
+    # 2. Pass Data back and foward
+    # 3. Create DataBase Model for all needed pages
+    # 5. Create Suber User
+    # 6. Start Styling
+
+
 

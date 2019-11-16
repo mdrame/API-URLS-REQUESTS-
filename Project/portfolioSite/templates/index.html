@@ -1,7 +1,9 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
     <head>
         <title> Home </title>
+        <link rel="stylesheet"  type="text/css" href="{% static 'index.css' %}">
     </head>
 
     <!-- indise -->
@@ -9,6 +11,9 @@
 
             <body>
                     <h1> Index Page Test  </h1>
+
+                    <h5> Log Out </h5>
+                    <h5> Log Out </h5>
                     <br>
                     {% for data in dummyModel %}
                     <h2> {{ data.Name }}</h2>
