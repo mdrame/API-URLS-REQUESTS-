@@ -10,11 +10,11 @@
         
                     <h1> Project Name </h1>
                     <br>
-                    {% for data in detailViewPortfolio %}
-                    <h3> {{ data.Image }}</h3>
+                    {% for data in context %}
                     <h2> {{ data.ProjectName }}</h2>
-                    <h6> {{ data.Technology }}</h6>
-                    <h3> {{ data.Summery }} </h3>
+                    <h3> {{ data.ganguages }}</h3>
+                    <h6> {{ data.gitHub_link }}</h6>
+                    <!-- <h3> {{ data.images }} </h3> -->
                     {% endfor %}
        
 
