@@ -27,3 +27,7 @@ def about(request):
     
     return render(request, 'portfolioTemplate/about.html')
 
+
+def portfolio(request):
+
+    return render(request, 'portfolioTemplate/portfolio.html')

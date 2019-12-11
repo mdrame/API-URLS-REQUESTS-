@@ -13,6 +13,7 @@
             <!-- Bootstrap CSS -->
             <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
+            <!-- Main Css -->
             <link rel="stylesheet" type="text/css" href="{% static 'portfolioTemplate/main.css' %}" >
 
             <!-- adding a spacific title base on it being passed from the route  -->
@@ -28,8 +29,18 @@
 
         <!-- Add navigation here -->
         <div class="container">
-            <h1> Navigation Here </h1>
+            <ui>
+                    <a href="{% url 'home'  %}"> <li> Home </li></a>
+                    <a href="{% url 'about'  %}"> <li> About </li></a>
+                    <a href="{% url 'portfolio'  %}"> <li> Portfolio </li> </a>
+                
+            </ui>
         </div>
+
+        <!-- add make edit button here  -->
+        <a href="admin/">Make Edit</a>
+
+
 
         <!-- Add rest of route body properties here  -->
         <div class="container">
