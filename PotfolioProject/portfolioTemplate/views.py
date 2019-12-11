@@ -2,14 +2,28 @@ from django.shortcuts import render
 from django.http import HttpResponse
 # Create your views here.
 
+# Data Base 
+homePageDataBase = [
+    {'image': 'Image here',
+    'firstOccupation': 'iOS ',
+    'secondOccupation': 'BackEnd Web',
+    'title': 'Home | Mohammed Drame'
+    }
+]
+
+
 def home(request):
     # Home Route 
-    return HttpResponse('<h1> Home </h1>')
+
+    context = {
+        'homeDataModel': homePageDataBase
+    }
+    return render(request, 'portfolioTemplate/home.html', context)
 
 
 # Navigation routes Below 
 
 def about(request):
     
-    return HttpResponse('<h1> About </h1>')
+    return render(request, 'portfolioTemplate/about.html')
 

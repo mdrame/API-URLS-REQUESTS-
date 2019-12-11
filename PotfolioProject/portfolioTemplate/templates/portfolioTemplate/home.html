@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        {%  if title %}
+        <title> {{ title }} </title>
+        {% else %}
+        <title> Portfolio </title>
+        {% endif %}
+    </head>
+    
+
+    <body>
+
+        <h1> Portfolio Home !</h1>
+
+        {% for data in homeDataModel %}
+        <h4> {{ data.image }} </h4>
+        <h4> {{ data.firstOccupation }} </h4>
+        <h4> {{ data.secondOccupation }} </h4>
+        {% endfor %}
+    </body>
+
+</html> 

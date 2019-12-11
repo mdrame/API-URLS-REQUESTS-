@@ -21,5 +21,5 @@ urlpatterns = [
     # Share app  with entire app under thre
     
     path('admin/', admin.site.urls),
-    path('portfolio/', include('portfolioTemplate.urls'))
+    path('', include('portfolioTemplate.urls'))
 ]
