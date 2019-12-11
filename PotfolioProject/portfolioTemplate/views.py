@@ -7,7 +7,7 @@ homePageDataBase = [
     {'image': 'Image here',
     'firstOccupation': 'iOS ',
     'secondOccupation': 'BackEnd Web',
-    'title': 'Home | Mohammed Drame'
+    'title': '| Mohammed Drame'
     }
 ]
 
