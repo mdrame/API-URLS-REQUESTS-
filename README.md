@@ -21,11 +21,6 @@
 
 * https://modrame.herokuapp.com/ 
 
-
-#### Dash Board
-
-<img src="1.png">
-
 ### Usage
 
 
