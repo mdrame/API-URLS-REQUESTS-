@@ -1,4 +1,4 @@
-{% extends 'portfolioTemplate/base.html' %}
+ {% extends 'portfolioTemplate/base.html' %}
 
     
     <h1> About </h1>
@@ -6,13 +6,17 @@
   
 {% block content %}
 
-    <h1> Portfolio Home! </h1>
-    {% for data in homeDataModel %}
-    <!-- add designes using css to this variables: alot of Divs inorder to create a responsive page -->
-    <h4> {{ data.aboutH1 }} </h4>
-    <h4> {{ data.describeYourSelf }} </h4>
-    <h4> {{ data.aboutImage }} </h4>
-    {% endfor %}
+    <h1> Sign Up! </h1>
+<div>
+    <form method="POST">
+        {% csrf_token %}
+        {{ form }}
+        <button type="submit"> Sign UO </button>
+    </form>
+
+    <p> Doon't Have an account <a href="#"> Log In </a></p>
+     
+</div>
   
   
 {% endblock content %}

@@ -41,6 +41,12 @@
         <a href="admin/">Make Edit</a>
         <!-- add admin route to urls of project -->
 
+        <!-- this message is being passed by the form in the user app -->
+        {% if message %}
+            {% for messg in message %}
+                <h3> Message: {{ message }} </h3>
+            {% endfor %}
+        {% endif %}
 
 
         <!-- Add rest of route body properties here  -->

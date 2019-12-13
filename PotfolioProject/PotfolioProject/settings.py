@@ -41,8 +41,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     #Third Party Apps
-    'portfolioTemplate.app.PortfolioTemplateConfig',
-    'user.app.UserConfig',
+    'portfolioTemplate',
+    'user',
 ]
 
 MIDDLEWARE = [

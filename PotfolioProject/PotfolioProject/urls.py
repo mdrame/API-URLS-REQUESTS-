@@ -15,11 +15,14 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from user import views as user_register_view
 
 
 urlpatterns = [
     # Share app  with entire app under thre
     
     path('admin/', admin.site.urls),
-    path('', include('portfolioTemplate.urls'))
+    path('', include('portfolioTemplate.urls')),
+    # adding user register urls directly into project urls.py
+    path('register/', user_register_view.register, name ='register'),
 ]
