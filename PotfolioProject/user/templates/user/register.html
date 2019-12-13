@@ -1,9 +1,7 @@
- {% extends 'portfolioTemplate/base.html' %}
+{% extends 'portfolioTemplate/base.html' %}
 
     
-    <h1> About </h1>
-    <!-- render data from about route and display here -->
-  
+   
 {% block content %}
 
     <h1> Sign Up! </h1>
@@ -11,10 +9,10 @@
     <form method="POST">
         {% csrf_token %}
         {{ form }}
-        <button type="submit"> Sign UO </button>
+        <button type="submit"> Sign Up </button>
     </form>
 
-    <p> Doon't Have an account <a href="#"> Log In </a></p>
+    <p> Have an account <a href="{% url 'login' %}"> Log In </a></p>
      
 </div>
   

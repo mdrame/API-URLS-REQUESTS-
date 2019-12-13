@@ -1,22 +1,21 @@
 from django.shortcuts import render, redirect
-from django.contrib.auth.forms import UserCreationForm
 # using django buildt in form to signUp user
 from django.contrib import messages
-
+from .form import UserRegisterForm
 # Create your views here.
 
 
 
 def register(request):
     if request.method == 'POST':
-        form = UserCreationForm(request.POST) # Create an instance of a form, and pass to template 
+        form = UserRegisterForm(request.POST) # Create an instance of a form, and pass to template 
         if form.is_valid:
             form.save()
             userName = form.cleaned_data.get('username')
-            messages.success(request, f'Account created for {userName}!')
+            messages.success(request, f'Account created: Pls log in {userName}!')
             # after getting clean render user to home destination
-            return redirect('home')  
+            return redirect('login')  
     else:
         # if form submission is not post return regular form
-        form = UserCreationForm()
+        form = UserRegisterForm()
     return render(request, 'user/register.html', {'form': form})
