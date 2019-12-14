@@ -19,3 +19,7 @@ def register(request):
         # if form submission is not post return regular form
         form = UserRegisterForm()
     return render(request, 'user/register.html', {'form': form})
+
+
+def profile(request):
+    return render(request, 'user/profile.html')
