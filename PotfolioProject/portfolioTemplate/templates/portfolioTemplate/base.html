@@ -37,9 +37,14 @@
             </ui>
         </div>
 
-        <!-- add make edit button here  -->
-        <a href="admin/">Make Edit</a>
-        <!-- add admin route to urls of project -->
+        
+        {% if user.is_authenticated %}
+            <a href="{% url 'logout' %}"> Log Out </a>
+        {% else %}
+            <a href="{% url 'login'%}"> Log in </a>
+            <a href="{% url 'register' %}"> Register </a>
+        {% endif %}
+       
 
         <!-- this message is being passed by the form in the user app -->
         {% if message %}

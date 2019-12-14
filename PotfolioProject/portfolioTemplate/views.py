@@ -30,7 +30,7 @@ def about(request):
     }
     return render(request, 'portfolioTemplate/about.html', contexts)
 
-
+# chnage to class view
 def portfolio(request):
     contextss = {
         'homeDataModel': Portfolio.objects.all()
