@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect
 # using django buildt in form to signUp user
 from django.contrib import messages
 from .form import UserRegisterForm
+from django.contrib.auth.decorators import login_required
 # Create your views here.
 
 
@@ -20,6 +21,6 @@ def register(request):
         form = UserRegisterForm()
     return render(request, 'user/register.html', {'form': form})
 
-
+@login_required
 def profile(request):
     return render(request, 'user/profile.html')
