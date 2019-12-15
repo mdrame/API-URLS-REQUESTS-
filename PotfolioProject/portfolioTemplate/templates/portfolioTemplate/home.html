@@ -1,12 +1,13 @@
 {% extends 'portfolioTemplate/base.html' %}
 
 
+
 {% block content %}
 
     <h1> Portfolio Home !</h1>
     {% for data in homeDataModel %}
     <!-- add designes using css to this variables: alot of Divs inorder to create a responsive page -->
-    <h4> {{ data.image }} </h4>
+    <img src="{{ portfolioTemplate.media.profile_image.image.url }}"/>
     <h4> {{ data.firstOccupaion }} </h4>
     <h4> {{ data.secondOccupation }} </h4>
     {% endfor %}

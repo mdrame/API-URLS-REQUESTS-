@@ -6,7 +6,7 @@ from django.contrib.auth.models import User
 # Model for the Home page
 class HomeContent(models.Model):
     # home page jumboTron
-    image = models.ImageField(upload_to='profile_image', blank=True)
+    image = models.ImageField(upload_to='profile_image', default="offecial.jpeg")
     # Left Text
     firstOccupaion = models.CharField(max_length=40000)
     # Right Text
@@ -15,7 +15,11 @@ class HomeContent(models.Model):
     pageTittle = models.CharField(max_length=40000)
 
     def __str__(self):
-        return self.image
+        return f'{self.user.username} Profile'
+
+    
+    
+
 
 
 
@@ -47,5 +51,5 @@ class Portfolio(models.Model):
     projectImageFour = models.ImageField(upload_to='profile_image', blank=True)
     projectImageFive = models.ImageField(upload_to='profile_image', blank=True)
     projectLink = models.CharField(max_length=40000)
-   
+
 

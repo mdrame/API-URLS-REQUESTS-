@@ -17,6 +17,8 @@ from django.contrib import admin
 from django.urls import path, include
 from user import views as user_register_view
 from django.contrib.auth import views as auth_views
+from django.conf import settings
+from django.conf.urls.static import static
 
 
 urlpatterns = [
@@ -31,4 +33,6 @@ urlpatterns = [
     path('profile/', user_register_view.profile, name ='profile'),
     path('', include('portfolioTemplate.urls')),
    
-]
+] 
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
