@@ -16,6 +16,8 @@
 * Public GitHub repo ---------------------------------- ✅	
 * No exposed secrets	--------------------------------- ✅
 
+* Restart projefct in Django.
+
 
 ## PortFolio
 
